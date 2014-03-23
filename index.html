@@ -66,7 +66,23 @@ Requests
 <h3>
 <a name="hiring" class="anchor" href="#hiring"><span class="octicon octicon-link"></span></a>Hiring</h3>
 
-<p>I am open for part-time work! Shoot me an email at <a href="mailto:superman3275@gmail.com">superman3275@gmail.com</a>. I live in central texas (DFW). Be warned - currently, hiring me might require special accommodations. Fear not, young padawan: I'm sure we can work these out!</p>
+<!--
+    PeoplePerHour Profile Widget
+    The div#pph-hire me is the element
+    where the iframe will be inserted.
+    You may move this element wherever
+    you need to display the widget
+-->
+<div id="pph-hireme"></div>
+<script type="text/javascript">
+(function(d, s) {
+    var useSSL = 'https:' == document.location.protocol;
+    var js, where = d.getElementsByTagName(s)[0],
+    js = d.createElement(s);
+    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2749065823/572050.js?width=728&height=115&orientation=horizontal&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
+    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+}(document, 'script'));
+</script>
 
 <h3>
 <a name="darkpython" class="anchor" href="#darkpython"><span class="octicon octicon-link"></span></a>DarkPython</h3>
@@ -102,26 +118,6 @@ Mark Pedroza.</p>
 
 <p>My email is: <a href="mailto:superman3275@gmail.com">superman3275@gmail.com</a>!
 You can talk to me on irc with the server irc.freenode.net on the channel ##dreamincode.</p>
-
-<h3>
-  <a name="hire-me" class="anchor" href="#hire-me"><span class="octicon octicon-link"></span></a>Hire Me!</h3>
-<!--
-    PeoplePerHour Profile Widget
-    The div#pph-hire me is the element
-    where the iframe will be inserted.
-    You may move this element wherever
-    you need to display the widget
--->
-<div id="pph-hireme"></div>
-<script type="text/javascript">
-(function(d, s) {
-    var useSSL = 'https:' == document.location.protocol;
-    var js, where = d.getElementsByTagName(s)[0],
-    js = d.createElement(s);
-    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2749065823/572050.js?width=728&height=115&orientation=horizontal&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
-    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-}(document, 'script'));
-</script>
       </section>
 
     </div>
