@@ -3,6 +3,17 @@ body {
 	color: #00A300;
 }
 
+code  {
+	display: block;
+	font-family: consolas, courier, monospace;
+	font-size: 15px;
+	line-height: 23px;
+	background-color: #0D0D0D;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding-left: 10px;
+}
 #container {
 	width: 960px;
 	margin: auto;
@@ -44,6 +55,15 @@ body {
 #content p {
 	margin: 0 0 0 20px;
 	font-size: 15px;
+}
+
+#farleft {
+	margin-left: 80px;
+}
+
+#footer {
+	font-size: 12px;
+	text-align: center;
 }
 
 .social {
