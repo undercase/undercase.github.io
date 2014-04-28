@@ -1,6 +1,6 @@
 $(function() {
 	social = $(".social");
-	fadetime = 500;
+	fadetime = 400;
 	// Start with it faded out
 	social.stop().fadeTo(0, 0.5);
 	social.mouseover(function() {
