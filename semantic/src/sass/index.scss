@@ -28,7 +28,9 @@ $normal: 1.125;
       font-size: $large-downscale;
     }
     padding-top: 1rem;
-    max-height: 107px;
+    @media only screen and (min-width: 1000px) {
+      max-height: 107px;
+    }
     &.left {
       text-align: right;
       @media only screen and (max-width: 763px) {
@@ -38,6 +40,7 @@ $normal: 1.125;
     }
     &.right {
       text-align: left;
+      margin-bottom: 0;
       @media only screen and (max-width: 763px) {
         text-align: center;
       }
@@ -49,6 +52,7 @@ $normal: 1.125;
           color: $red;
         }
       }
+      display: block;
     }
     font-family: $font;
   }

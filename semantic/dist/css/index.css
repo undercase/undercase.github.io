@@ -8,11 +8,13 @@
     width: 100%;
     font-size: 4.5rem;
     padding-top: 1rem;
-    max-height: 107px;
     font-family: "Times New Roman"; }
     @media only screen and (max-width: 1000px) {
       .ui.stackable.grid .name.ui.header {
         font-size: 2.5rem; } }
+    @media only screen and (min-width: 1000px) {
+      .ui.stackable.grid .name.ui.header {
+        max-height: 107px; } }
     .ui.stackable.grid .name.ui.header.left {
       text-align: right;
       color: #ffffff; }
@@ -21,7 +23,9 @@
           text-align: center; } }
     .ui.stackable.grid .name.ui.header.right {
       text-align: left;
-      color: #DB3340; }
+      margin-bottom: 0;
+      color: #DB3340;
+      display: block; }
       @media only screen and (max-width: 763px) {
         .ui.stackable.grid .name.ui.header.right {
           text-align: center; } }
