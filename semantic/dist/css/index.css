@@ -1,0 +1,76 @@
+.ui.stackable.grid {
+  min-height: 100vh; }
+  .ui.stackable.grid .left.column {
+    background: #DB3340; }
+  .ui.stackable.grid .right.column {
+    background: #ffffff; }
+  .ui.stackable.grid .name.ui.header {
+    width: 100%;
+    font-size: 6rem;
+    padding-top: 1rem;
+    max-height: 107px;
+    font-family: "Times New Roman"; }
+    .ui.stackable.grid .name.ui.header.left {
+      text-align: right;
+      color: #ffffff; }
+    .ui.stackable.grid .name.ui.header.right {
+      text-align: left;
+      color: #DB3340; }
+      .ui.stackable.grid .name.ui.header.right span.sideline {
+        font-size: 3rem;
+        color: #000000; }
+        .ui.stackable.grid .name.ui.header.right span.sideline .red {
+          color: #DB3340; }
+  .ui.stackable.grid .resume .bio {
+    padding-top: 0;
+    padding-right: 1rem;
+    margin-bottom: 0;
+    font-family: "Times New Roman";
+    font-size: 1.5rem;
+    color: #000000; }
+  .ui.stackable.grid .resume h2.ui.header {
+    font-family: "Times New Roman";
+    color: #DB3340;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .ui.stackable.grid .resume .ui.jobs.list .job {
+    margin-top: 0.5rem;
+    font-family: "Times New Roman"; }
+    .ui.stackable.grid .resume .ui.jobs.list .job h3.ui.header {
+      font-family: inherit;
+      font-size: 1.7rem; }
+    .ui.stackable.grid .resume .ui.jobs.list .job p {
+      font-size: 1.5rem; }
+  .ui.stackable.grid .resume .ui.projects.list .project {
+    margin-top: 0.5rem;
+    font-family: "Times New Roman"; }
+    .ui.stackable.grid .resume .ui.projects.list .project h3.ui.header {
+      font-family: inherit;
+      font-size: 1.7rem; }
+      .ui.stackable.grid .resume .ui.projects.list .project h3.ui.header a {
+        color: #000000; }
+        .ui.stackable.grid .resume .ui.projects.list .project h3.ui.header a:hover {
+          color: #000000;
+          text-decoration: underline; }
+    .ui.stackable.grid .resume .ui.projects.list .project p {
+      font-size: 1.5rem; }
+  .ui.stackable.grid .details.list {
+    text-align: right;
+    padding-top: 2rem; }
+    .ui.stackable.grid .details.list .ui.header {
+      color: #ffffff;
+      font-family: "Times New Roman";
+      font-size: 3rem; }
+    .ui.stackable.grid .details.list .ui.list .item {
+      font-family: "Times New Roman";
+      color: #ffffff;
+      font-size: 1.7rem; }
+      .ui.stackable.grid .details.list .ui.list .item a {
+        color: #ffffff; }
+        .ui.stackable.grid .details.list .ui.list .item a:hover {
+          color: #ffffff;
+          text-decoration: underline; }
+  .ui.stackable.grid .credentials {
+    text-align: right;
+    padding-top: 0 !important; }
