@@ -10,12 +10,21 @@
     padding-top: 1rem;
     max-height: 107px;
     font-family: "Times New Roman"; }
+    @media only screen and (max-width: 1000px) {
+      .ui.stackable.grid .name.ui.header {
+        font-size: 2.5rem; } }
     .ui.stackable.grid .name.ui.header.left {
       text-align: right;
       color: #ffffff; }
+      @media only screen and (max-width: 763px) {
+        .ui.stackable.grid .name.ui.header.left {
+          text-align: center; } }
     .ui.stackable.grid .name.ui.header.right {
       text-align: left;
       color: #DB3340; }
+      @media only screen and (max-width: 763px) {
+        .ui.stackable.grid .name.ui.header.right {
+          text-align: center; } }
       .ui.stackable.grid .name.ui.header.right span.sideline {
         font-size: 2.25rem;
         color: #000000; }
@@ -58,6 +67,9 @@
   .ui.stackable.grid .details.list {
     text-align: right;
     padding-top: 2rem; }
+    @media only screen and (max-width: 763px) {
+      .ui.stackable.grid .details.list {
+        text-align: center; } }
     .ui.stackable.grid .details.list .ui.header {
       color: #ffffff;
       font-family: "Times New Roman";
@@ -74,3 +86,6 @@
   .ui.stackable.grid .credentials {
     text-align: right;
     padding-top: 0 !important; }
+    @media only screen and (max-width: 763px) {
+      .ui.stackable.grid .credentials {
+        text-align: center; } }

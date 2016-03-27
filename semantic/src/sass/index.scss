@@ -5,6 +5,7 @@ $black: #000000;
 $font: "Times New Roman";
 
 $large: 4.5rem;
+$large-downscale: 2.5rem;
 $medium: 2.25rem;
 $emphasized: 1.275rem;
 $normal: 1.125;
@@ -23,14 +24,23 @@ $normal: 1.125;
   .name.ui.header {
     width: 100%;
     font-size: $large;
+    @media only screen and (max-width: 1000px) {
+      font-size: $large-downscale;
+    }
     padding-top: 1rem;
     max-height: 107px;
     &.left {
       text-align: right;
+      @media only screen and (max-width: 763px) {
+        text-align: center;
+      }
       color: $white;
     }
     &.right {
       text-align: left;
+      @media only screen and (max-width: 763px) {
+        text-align: center;
+      }
       color: $red;
       span.sideline {
         font-size: $medium;
@@ -96,6 +106,9 @@ $normal: 1.125;
 
   .details.list {
     text-align: right;
+    @media only screen and (max-width: 763px) {
+      text-align: center;
+    }
     padding-top: 2rem;
     .ui.header {
       color: $white;
@@ -120,6 +133,9 @@ $normal: 1.125;
 
   .credentials {
     text-align: right;
+    @media only screen and (max-width: 763px) {
+      text-align: center;
+    }
     padding-top: 0 !important;
   }
 }
