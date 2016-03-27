@@ -1,7 +1,13 @@
 $red: #DB3340;
 $white: #ffffff;
 $black: #000000;
+
 $font: "Times New Roman";
+
+$large: 4.5rem;
+$medium: 2.25rem;
+$emphasized: 1.275rem;
+$normal: 1.125;
 
 .ui.stackable.grid {
   min-height: 100vh;
@@ -16,7 +22,7 @@ $font: "Times New Roman";
 
   .name.ui.header {
     width: 100%;
-    font-size: 6rem;
+    font-size: $large;
     padding-top: 1rem;
     max-height: 107px;
     &.left {
@@ -27,7 +33,7 @@ $font: "Times New Roman";
       text-align: left;
       color: $red;
       span.sideline {
-        font-size: 3rem;
+        font-size: $medium;
         color: $black;
         .red {
           color: $red;
@@ -43,13 +49,13 @@ $font: "Times New Roman";
       padding-right: 1rem;
       margin-bottom: 0;
       font-family: $font;
-      font-size: 1.5rem;
+      font-size: $normal;
       color: $black;
     }
     h2.ui.header {
       font-family: $font;
       color: $red;
-      font-size: 3rem;
+      font-size: $medium;
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
@@ -59,10 +65,10 @@ $font: "Times New Roman";
         font-family: $font;
         h3.ui.header {
           font-family: inherit;
-          font-size: 1.7rem;
+          font-size: $emphasized;
         }
         p {
-          font-size: 1.5rem;
+          font-size: $normal;
         }
       }
     }
@@ -79,10 +85,10 @@ $font: "Times New Roman";
             }
           }
           font-family: inherit;
-          font-size: 1.7rem;
+          font-size: $emphasized;
         }
         p {
-          font-size: 1.5rem;
+          font-size: $normal;
         }
       }
     }
@@ -94,7 +100,7 @@ $font: "Times New Roman";
     .ui.header {
       color: $white;
       font-family: $font;
-      font-size: 3rem;
+      font-size: $medium;
     }
     .ui.list {
       .item {
@@ -107,7 +113,7 @@ $font: "Times New Roman";
         }
         font-family: $font;
         color: $white;
-        font-size: 1.7rem;
+        font-size: $emphasized;
       }
     }
   }
