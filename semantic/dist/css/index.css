@@ -8,7 +8,7 @@
     width: 100%;
     font-size: 4.5rem;
     padding-top: 1rem;
-    font-family: "Times New Roman"; }
+    font-family: "Lato"; }
     @media only screen and (max-width: 1000px) {
       .ui.stackable.grid .name.ui.header {
         font-size: 2.5rem; } }
@@ -38,18 +38,18 @@
     padding-top: 0;
     padding-right: 1rem;
     margin-bottom: 0;
-    font-family: "Times New Roman";
+    font-family: "Lato";
     font-size: 1.125;
     color: #000000; }
   .ui.stackable.grid .resume h2.ui.header {
-    font-family: "Times New Roman";
+    font-family: "Lato";
     color: #DB3340;
     font-size: 2.25rem;
     margin-top: 1rem;
     margin-bottom: 1rem; }
   .ui.stackable.grid .resume .ui.jobs.list .job {
     margin-top: 0.5rem;
-    font-family: "Times New Roman"; }
+    font-family: "Lato"; }
     .ui.stackable.grid .resume .ui.jobs.list .job h3.ui.header {
       font-family: inherit;
       font-size: 1.275rem; }
@@ -57,7 +57,7 @@
       font-size: 1.125; }
   .ui.stackable.grid .resume .ui.projects.list .project {
     margin-top: 0.5rem;
-    font-family: "Times New Roman"; }
+    font-family: "Lato"; }
     .ui.stackable.grid .resume .ui.projects.list .project h3.ui.header {
       font-family: inherit;
       font-size: 1.275rem; }
@@ -76,10 +76,10 @@
         text-align: center; } }
     .ui.stackable.grid .details.list .ui.header {
       color: #ffffff;
-      font-family: "Times New Roman";
+      font-family: "Lato";
       font-size: 2.25rem; }
     .ui.stackable.grid .details.list .ui.list .item {
-      font-family: "Times New Roman";
+      font-family: "Lato";
       color: #ffffff;
       font-size: 1.275rem; }
       .ui.stackable.grid .details.list .ui.list .item a {
