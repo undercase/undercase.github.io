@@ -1,0 +1,148 @@
+$red: #DB3340;
+$white: #ffffff;
+$black: #000000;
+
+$font: "Lato";
+
+$large: 4.5rem;
+$large-downscale: 2.5rem;
+$medium: 2.25rem;
+$emphasized: 1.275rem;
+$normal: 1.125;
+
+
+
+
+.ui.stackable.grid {
+  min-height: 100vh;
+
+  .left.column {
+    background: $red;
+  }
+
+  .right.column {
+    background: $white;
+  }
+
+  .name.ui.header {
+    width: 100%;
+    font-size: $large;
+    @media only screen and (max-width: 1000px) {
+      font-size: $large-downscale;
+    }
+    padding-top: 1rem;
+    @media only screen and (min-width: 1000px) {
+      max-height: 107px;
+    }
+    &.left {
+      text-align: right;
+      @media only screen and (max-width: 763px) {
+        text-align: center;
+      }
+      color: $white;
+    }
+    &.right {
+      text-align: left;
+      margin-bottom: 0;
+      @media only screen and (max-width: 763px) {
+        text-align: center;
+      }
+      color: $red;
+      span.sideline {
+        font-size: $medium;
+        color: $black;
+        .red {
+          color: $red;
+        }
+      }
+      display: block;
+    }
+    font-family: $font;
+  }
+
+  .resume {
+    .bio {
+      padding-top: 0;
+      padding-right: 1rem;
+      margin-bottom: 0;
+      font-family: $font;
+      font-size: $normal;
+      color: $black;
+    }
+    h2.ui.header {
+      font-family: $font;
+      color: $red;
+      font-size: $medium;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .ui.jobs.list {
+      .job {
+        margin-top: 0.5rem;
+        font-family: $font;
+        h3.ui.header {
+          font-family: inherit;
+          font-size: $emphasized;
+        }
+        p {
+          font-size: $normal;
+        }
+      }
+    }
+    .ui.projects.list {
+      .project {
+        margin-top: 0.5rem;
+        font-family: $font;
+        h3.ui.header {
+          a {
+            color: $black;
+            &:hover {
+              color: $black;
+              text-decoration: underline;
+            }
+          }
+          font-family: inherit;
+          font-size: $emphasized;
+        }
+        p {
+          font-size: $normal;
+        }
+      }
+    }
+  }
+
+  .details.list {
+    text-align: right;
+    @media only screen and (max-width: 763px) {
+      text-align: center;
+    }
+    padding-top: 2rem;
+    .ui.header {
+      color: $white;
+      font-family: $font;
+      font-size: $medium;
+    }
+    .ui.list {
+      .item {
+        a {
+          color: $white;
+          &:hover {
+            color: $white;
+            text-decoration: underline;
+          }
+        }
+        font-family: $font;
+        color: $white;
+        font-size: $emphasized;
+      }
+    }
+  }
+
+  .credentials {
+    text-align: right;
+    @media only screen and (max-width: 763px) {
+      text-align: center;
+    }
+    padding-top: 0 !important;
+  }
+}
