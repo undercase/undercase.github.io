@@ -75,4 +75,6 @@
 
 @media screen and (max-width: 500px) {
   .ui.container {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+    .ui.container .ui.grid .row > .column .inner h2.ui.header {
+      font-size: 1.5rem; } }

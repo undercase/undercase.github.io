@@ -140,5 +140,15 @@ $mobile-break: 705px;
 @media screen and (max-width: $breakpoint) {
   .ui.container {
     font-size: 1.5em;
+
+    .ui.grid {
+      .row > .column {
+        .inner {
+          h2.ui.header {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }
