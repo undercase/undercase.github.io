@@ -109,7 +109,16 @@ $mobile-break: 705px;
 
           color: #fff;
           text-align: center;
+        }
 
+        p {
+          display: none;
+
+          font-size: 1rem;
+          color: #fff;
+        }
+
+        .text {
           position: relative;
           top: 50%;
           transform: translateY(-50%);
@@ -152,6 +161,9 @@ $mobile-break: 705px;
         .inner {
           h2.ui.header {
             font-size: 1.5rem;
+          }
+          p {
+            font-size: 0.8rem;
           }
         }
       }
