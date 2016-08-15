@@ -131,6 +131,12 @@ $mobile-break: 705px;
   }
 }
 
+@media screen and (max-height: $mobile-break) {
+  .ui.container {
+    padding-top: 1rem;
+  }
+}
+
 @media screen and (min-width: $breakpoint) {
   .ui.container {
     font-size: 2rem;

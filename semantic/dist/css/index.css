@@ -69,6 +69,10 @@
     top: 50%;
     transform: translateY(-50%); } }
 
+@media screen and (max-height: 705px) {
+  .ui.container {
+    padding-top: 1rem; } }
+
 @media screen and (min-width: 500px) {
   .ui.container {
     font-size: 2rem; } }
