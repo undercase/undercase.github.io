@@ -17,13 +17,13 @@
     font-size: 4.5rem;
     padding-top: 1rem;
     font-family: "Lato"; }
-    @media only screen and (min-width: 1100px) {
+    @media only screen and (min-width: 1000px) {
       .ui.stackable.grid .name.ui.header {
         max-height: 107px; } }
     .ui.stackable.grid .name.ui.header.left {
       text-align: right;
       color: #ffffff; }
-      @media only screen and (max-width: 1100px) {
+      @media only screen and (max-width: 1000px) {
         .ui.stackable.grid .name.ui.header.left {
           font-size: 2.25rem; } }
       @media only screen and (max-width: 767px) {
@@ -34,7 +34,7 @@
       margin-bottom: 0;
       color: #DB3340;
       display: block; }
-      @media only screen and (max-width: 1100px) {
+      @media only screen and (max-width: 1000px) {
         .ui.stackable.grid .name.ui.header.right {
           font-size: 2.25rem; } }
       @media only screen and (max-width: 767px) {
@@ -43,7 +43,7 @@
       .ui.stackable.grid .name.ui.header.right span.sideline {
         font-size: 2.25rem;
         color: #DB3340; }
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (max-width: 1000px) {
           .ui.stackable.grid .name.ui.header.right span.sideline {
             font-size: 1.75rem !important; } }
   .ui.stackable.grid .resume .bio {

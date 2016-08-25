@@ -11,13 +11,16 @@ $medium-downscale: 1.75rem;
 $emphasized: 1.275rem;
 $normal: 1.125;
 
-@media only screen and (max-width: 767px) {
+$mobile-cutoff: 767px;
+$larger-cutoff: 1000px;
+
+@media only screen and (max-width: $mobile-cutoff) {
   .large.display {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: $mobile-cutoff) {
   .small.display {
     display: none;
   }
@@ -38,15 +41,15 @@ $normal: 1.125;
     width: 100%;
     font-size: $large;
     padding-top: 1rem;
-    @media only screen and (min-width: 1100px) {
+    @media only screen and (min-width: $larger-cutoff) {
       max-height: 107px;
     }
     &.left {
       text-align: right;
-      @media only screen and (max-width: 1100px) {
+      @media only screen and (max-width: $larger-cutoff) {
         font-size: $medium;
       }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: $mobile-cutoff) {
         text-align: center;
       }
       color: $white;
@@ -54,17 +57,17 @@ $normal: 1.125;
     &.right {
       text-align: left;
       margin-bottom: 0;
-      @media only screen and (max-width: 1100px) {
+      @media only screen and (max-width: $larger-cutoff) {
         font-size: $medium;
       }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: $mobile-cutoff) {
         text-align: center;
       }
       color: $red;
       span.sideline {
         font-size: $medium;
         color: $red;
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (max-width: $larger-cutoff) {
           font-size: $medium-downscale !important;
         }
       }
@@ -88,7 +91,7 @@ $normal: 1.125;
       font-size: $medium;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: $mobile-cutoff) {
         text-align: center;
       }
     }
@@ -129,7 +132,7 @@ $normal: 1.125;
 
   .details.list {
     text-align: right;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: $mobile-cutoff) {
       text-align: center;
     }
     padding-top: 2rem;
@@ -156,7 +159,7 @@ $normal: 1.125;
 
   .credentials {
     text-align: right;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: $mobile-cutoff) {
       text-align: center;
     }
     padding-top: 0 !important;
