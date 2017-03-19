@@ -1,4 +1,4 @@
-$red: #DB3340;
+$red: #1499D3;
 $white: #ffffff;
 $black: #000000;
 
@@ -8,11 +8,20 @@ $large: 4.5rem;
 $large-downscale: 2.5rem;
 $medium: 2.25rem;
 $medium-downscale: 1.75rem;
-$emphasized: 1.275rem;
-$normal: 1.125;
+$emphasized: 1.4rem;
+$normal: 1.125rem;
+$smaller: 1rem;
 
 $mobile-cutoff: 767px;
 $larger-cutoff: 1000px;
+
+a {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width: $mobile-cutoff) {
   .large.display {
@@ -41,9 +50,6 @@ $larger-cutoff: 1000px;
     width: 100%;
     font-size: $large;
     padding-top: 1rem;
-    @media only screen and (min-width: $larger-cutoff) {
-      max-height: 107px;
-    }
     &.left {
       text-align: right;
       @media only screen and (max-width: $larger-cutoff) {
@@ -100,6 +106,7 @@ $larger-cutoff: 1000px;
         margin-top: 0.5rem;
         font-family: $font;
         h3.ui.header {
+          color: $red;
           font-family: inherit;
           font-size: $emphasized;
         }
@@ -114,11 +121,7 @@ $larger-cutoff: 1000px;
         font-family: $font;
         h3.ui.header {
           a {
-            color: $black;
-            &:hover {
-              color: $black;
-              text-decoration: underline;
-            }
+            color: $red !important;
           }
           font-family: inherit;
           font-size: $emphasized;
@@ -139,16 +142,11 @@ $larger-cutoff: 1000px;
     .ui.header {
       color: $white;
       font-family: $font;
-      font-size: $medium;
     }
     .ui.list {
       .item {
         a {
-          color: $white;
-          &:hover {
-            color: $white;
-            text-decoration: underline;
-          }
+          color: $white !important;
         }
         font-family: $font;
         color: $white;
@@ -158,10 +156,6 @@ $larger-cutoff: 1000px;
   }
 
   .credentials {
-    text-align: right;
-    @media only screen and (max-width: $mobile-cutoff) {
-      text-align: center;
-    }
     padding-top: 0 !important;
   }
 }
