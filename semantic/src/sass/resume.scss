@@ -1,4 +1,4 @@
-$red: #1499D3;
+$blue: #1499D3;
 $white: #ffffff;
 $black: #000000;
 
@@ -39,7 +39,7 @@ a {
   min-height: 100vh;
 
   .left.column {
-    background: $red;
+    background: $blue;
   }
 
   .right.column {
@@ -69,10 +69,10 @@ a {
       @media only screen and (max-width: $mobile-cutoff) {
         text-align: center;
       }
-      color: $red;
+      color: $blue;
       span.sideline {
         font-size: $medium;
-        color: $red;
+        color: $blue;
         @media only screen and (max-width: $larger-cutoff) {
           font-size: $medium-downscale !important;
         }
@@ -93,7 +93,7 @@ a {
     }
     h2.ui.header {
       font-family: $font;
-      color: $red;
+      color: $blue;
       font-size: $medium;
       margin-top: 1rem;
       margin-bottom: 1rem;
@@ -106,7 +106,7 @@ a {
         margin-top: 0.5rem;
         font-family: $font;
         h3.ui.header {
-          color: $red;
+          color: $blue;
           font-family: inherit;
           font-size: $emphasized;
         }
@@ -121,7 +121,7 @@ a {
         font-family: $font;
         h3.ui.header {
           a {
-            color: $red !important;
+            color: $blue !important;
           }
           font-family: inherit;
           font-size: $emphasized;

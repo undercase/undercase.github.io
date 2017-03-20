@@ -100,8 +100,4 @@ a {
       .ui.stackable.grid .details.list .ui.list .item a {
         color: #ffffff !important; }
   .ui.stackable.grid .credentials {
-    text-align: right;
     padding-top: 0 !important; }
-    @media only screen and (max-width: 1000px) {
-      .ui.stackable.grid .credentials {
-        text-align: center; } }
