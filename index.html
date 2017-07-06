@@ -14,6 +14,37 @@
 		<link rel="stylesheet" type="text/css" href="semantic/dist/css/index.css">
 
 		<script type="text/javascript" src="semantic/dist/js/index.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $('h1.ui.header').on('click', function() {
+			    $.ajax({
+			      url: 'https://lichess.org/api/users/status?ids=kapperprode',
+			      dataType: 'jsonp',
+			      jsonp: 'callback',
+			      success: function(data) {
+			        let status = data[0].online ? 'online' : 'offline';
+			        $('h1.ui.header').html("Justin is " + status + "!");
+			        $('.ui.three.column.grid > .column > a').html('<a href="https://lichess.org">Lichess</a>');
+			      }
+			    });
+
+			    $.ajax({
+			      url: 'https://lichess.org/api/user/kapperprode/games?nb=4&with_analysis=1',
+			      dataType: 'jsonp',
+			      jsonp: 'callback',
+			      success: function(data) {
+			        $('.grid.equal').remove();
+			        $('p').html('Here are his last four games!');
+			        $('.ui.container').append("<div class='ui equal height grid'> <div class='two column equal height row'></div></div>");
+			        data.currentPageResults.forEach(function(d) {
+			          let gameURL = 'https://lichess.org/embed/' + d.id + '?theme=auto&bg=auto';
+			          $('.ui.equal.height.grid > .two.column').append("<iframe frameborder=0 src=" + gameURL + "></iframe>");
+			        });
+			      }
+			    });
+			  });
+			})
+	</script>
 	</head>
   <body>
 		<div class="ui container">
