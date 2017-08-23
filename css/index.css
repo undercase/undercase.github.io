@@ -16,8 +16,8 @@ body, .wrapper {
 }
 
 .container {
-  width: 100%;
-  max-width: 600px;
+  width: 600px;
+  height: 600px;
 
   margin: auto;
 }
@@ -30,7 +30,6 @@ body, .wrapper {
   left: 0;
   right: 0;
 
-  width: 100% !important;
-  height: auto !important;
-  max-height: 100vh !important;
+  width: 600px !important;
+  height: 600px !important;
 }
