@@ -1,16 +1,22 @@
-body {
+body, .wrapper {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
 
+.wrapper {
+  text-align: center;
+}
+
 .container {
   width: 60%;
   min-width: 300px;
+
+  margin: auto;
 }
 
 .container canvas {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
