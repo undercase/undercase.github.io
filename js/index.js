@@ -6,6 +6,7 @@ $(document).ready(() => {
   });
 
   aquarelle.addEventListener('created', function() {
+    $('.container').css('display', 'block');
     var canvas = this.getCanvas();
     img.parentNode.insertBefore(canvas, img.nextSibling);
     img.parentNode.removeChild(img);
