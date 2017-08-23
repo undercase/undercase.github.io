@@ -13,24 +13,17 @@ body, .wrapper {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  width: 100vw;
 }
 
 .container {
-  width: 600px;
-  height: 600px;
+  width: 60%;
+  min-width: 300px;
 
   margin: auto;
 }
 
 .container canvas {
-  position: absolute;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  width: 600px !important;
-  height: 600px !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 100vh !important;
 }
