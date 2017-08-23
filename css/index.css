@@ -20,4 +20,5 @@ body, .wrapper {
 .container canvas {
   width: 100% !important;
   height: auto !important;
+  max-height: 100vh;
 }
