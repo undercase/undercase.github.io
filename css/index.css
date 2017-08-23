@@ -7,7 +7,7 @@ body, .wrapper {
 
 .wrapper {
   text-align: center;
-  filter: blur(3px);
+  filter: blur(2px);
 
   display: flex;
   align-items: center;
