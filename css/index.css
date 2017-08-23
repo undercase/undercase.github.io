@@ -9,3 +9,8 @@ body {
   width: 60%;
   min-width: 300px;
 }
+
+.container canvas {
+  width: 100%;
+  height: auto;
+}
