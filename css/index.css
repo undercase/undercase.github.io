@@ -16,8 +16,6 @@ body, .wrapper {
 }
 
 .container {
-  position: relative;
-
   width: 60%;
   min-width: 300px;
 
@@ -25,7 +23,6 @@ body, .wrapper {
 }
 
 .container canvas {
-  position: absolute;
   width: 100% !important;
   height: auto !important;
   max-height: 100vh !important;
