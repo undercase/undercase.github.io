@@ -1,107 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Thomas Hobohm</title>
+  <head>
+    <title>Thomas Hobohm</title>
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-		<script type="text/javascript" src="semantic/dist/js/jquery-1.12.2.min.js"></script>
-		<script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
 
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="semantic/dist/css/index.css">
+    <!-- AQUARELLE ANIMATION -->
+    <script src="bower_components/three.js/build/three.js"></script>
 
-		<script type="text/javascript" src="semantic/dist/js/index.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-			  $('h1.header').on('click', function() {
-			    $.ajax({
-			      url: 'https://lichess.org/api/users/status?ids=kapperprode',
-			      dataType: 'jsonp',
-			      jsonp: 'callback',
-			      success: function(data) {
-			        let status = data[0].online ? 'online' : 'offline';
-			        $('h1.ui.header').html("Justin is " + status + "!");
-			        $('.ui.three.column.grid > .column > a').html('<a href="https://lichess.org">Lichess</a>');
-			      }
-			    });
+    <script src="bower_components/aquarelle/Aquarelle.js"></script>
 
-			    $.ajax({
-			      url: 'https://lichess.org/api/user/kapperprode/games?nb=4&with_analysis=1',
-			      dataType: 'jsonp',
-			      jsonp: 'callback',
-			      success: function(data) {
-			        $('.grid.equal').remove();
-			        $('p').html('Here are his last four games!');
-			        $('.ui.container').append("<div class='ui equal height grid'> <div class='two column equal height row'></div></div>");
-			        data.currentPageResults.forEach(function(d) {
-			          let gameURL = 'https://lichess.org/embed/' + d.id + '?theme=auto&bg=auto';
-			          $('.ui.equal.height.grid > .two.column').append("<iframe frameborder=0 src=" + gameURL + "></iframe>");
-			        });
-			      }
-			    });
-			  });
-			})
-	</script>
-	</head>
+    <script src="bower_components/three.js/examples/js/postprocessing/EffectComposer.js"></script>
+
+    <script src="bower_components/three.js/examples/js/postprocessing/ClearPass.js"></script>
+    <script src="bower_components/aquarelle/AquarellePass.js"></script>
+    <script src="bower_components/three.js/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="bower_components/three.js/examples/js/shaders/CopyShader.js"></script>
+
+    <script src="js/contour.js"></script>
+
+    <!-- code -->
+    <script src="js/index.js"></script>
+  </head>
   <body>
-		<div class="ui container">
-			<h1 class="ui header">thomas</h1>
-			<div class="ui three column grid">
-				<div class="column"><a href="http://linkedin.com/in/thomashobohm">LinkedIn</a></div>
-				<div class="column"><a href="http://github.com/undercase">GitHub</a></div>
-				<div class="column"><a href="resume.html">Resume</a></div>
-			</div>
-			<p>Hi<span class="exclamation">!</span> I'm <span class="name">Thomas Hobohm</span>. I'm into <span class="interest">philosophy</span>, <span class="interest">crazy music</span>, <span class="interest">Chinese</span>, and <span class="interest">aesthetic</span>. I want to build products that <span class="hook">change the world.</span></p>
-
-			<div class="ui equal height grid">
-				<div class="two column equal height row">
-					<div class="column">
-						<a href="http://fortify.us-west-2.elasticbeanstalk.com/">
-							<div class="fortify inner">
-								<div class="text">
-									<h2 class="ui header">Fortify</h2>
-									<p>Fitness made easy. Workout planning and tracking wrapped in an intuitive interface.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="column">
-						<a href="http://pocketbox-dev.us-west-2.elasticbeanstalk.com/">
-							<div class="pocketbox inner">
-								<div class="text">
-									<h2 class="ui header">PocketBox</h2>
-									<p>Effortlessly simple file sharing and meeting tracking aimed at college and university debate programs.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="two column equal height row">
-					<div class="column">
-						<a href="http://undercase.github.io/proof">
-							<div class="proof inner">
-								<div class="text">
-									<h2 class="ui header">Proof</h2>
-									<p>Insanely easy authentication for modern web applications - designed with the developer in mind.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="column">
-						<a href="http://scheme.us-west-2.elasticbeanstalk.com/">
-							<div class="scheme inner">
-								<div class="text">
-									<h2 class="ui header">Scheme</h2>
-									<p>Devilishly easy brainstorming for small to large teams. Incorporates real time chat and websockets.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+    <img id="splash" src="img/splash.png" />
   </body>
 </html>
