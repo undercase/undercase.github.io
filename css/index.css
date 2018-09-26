@@ -64,6 +64,16 @@ h2 {
   padding-right: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .hobbies {
+    flex-direction: column;
+  }
+  .hobbies a {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+}
+
 .hobbies a h2 {
   font-size: 1.5em;
 }
