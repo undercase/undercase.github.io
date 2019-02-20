@@ -109,3 +109,13 @@ h2 {
 .description .underline {
   border-bottom: 1px dashed;
 }
+
+.description a {
+  color: inherit;
+  opacity: 0.6;
+  transition: opacity .2s ease-in-out;
+}
+
+.description a:hover {
+  opacity: 1;
+}
